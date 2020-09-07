@@ -13,7 +13,7 @@ public class TrianglePerimeter {
 			System.out.println("The perimeter is " + (S1 + S2 + S3));
 	    }
 	    else {
-	      System.out.println("Input is invalid");
+	      System.out.println("Input is invalid.");
 		}
 
 	}
