@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
 public class FactorsOfAnInteger {
-
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a positive integer: ");
