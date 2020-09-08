@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * The Collatz conjecture is a conjecture in mathematics that concerns a
  * sequence defined as follows: start with any positive integer n. Then each
@@ -8,7 +6,7 @@ import java.util.Scanner;
  * odd, the next term is 3 times the previous term plus 1. The conjecture is
  * that no matter what value of n, the sequence will always reach 1.
  */
-
+import java.util.Scanner;
 public class CollatzSequence {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -24,5 +22,4 @@ public class CollatzSequence {
 		}
 		System.out.print(NUM + " ");
 	}
-
 }
