@@ -13,7 +13,7 @@ public class CollatzSequence {
 		System.out.println("Enter a number:");
 		int NUM = input.nextInt();
 		while (NUM != 1) {
-			System.out.print(NUM+ " ");
+			System.out.print(NUM + " ");
 			if (NUM % 2 == 0) {
 				NUM = NUM / 2;
 			} else {
