@@ -6,6 +6,5 @@ public class Exercise_4_8 {
 		System.out.println("Enter and ASCII code: ");
 		int DECIMAL = input.nextInt();
 		System.out.println("The character for ASCII code " + DECIMAL + " is " + (char)DECIMAL);
-		
 	}
 }
