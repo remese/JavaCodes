@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
 public class PalindromeNumber {
-
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a three-digit integer: ");
@@ -12,5 +10,4 @@ public class PalindromeNumber {
 			System.out.println(number + " is not a palindrome");
 		}
 	}
-
 }
