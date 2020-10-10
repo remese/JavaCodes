@@ -3,7 +3,7 @@ public class ClosestPair {
 		double[][] POINTSXY = new double[][] { { -1, 3 }, { -8, -9 }, { 1, 19 }, { 2, 0.5 }, { 2, -1 }, { 3, 3 },
 				{ 4, 2 }, { 4, -0.5 }, { 7, 8 }, { 3, 2 } };
 		double DISTANCE;
-		double d_rounded;
+		double distanceRounded;
 		int p1x = 0;
 		int p2x = 0;
 		double CLOSEST = Math.pow((POINTSXY[1][0] - POINTSXY[0][0]) * (POINTSXY[1][0] - POINTSXY[0][0])
@@ -12,9 +12,9 @@ public class ClosestPair {
 			for (int j = i + 1; j < POINTSXY.length; j++) {
 				DISTANCE = Math.pow((POINTSXY[j][0] - POINTSXY[i][0]) * (POINTSXY[j][0] - POINTSXY[i][0])
 						+ (POINTSXY[j][1] - POINTSXY[i][1]) * (POINTSXY[j][1] - POINTSXY[i][1]), 0.5);
-				d_rounded = Math.round(DISTANCE * 100) / 100.0;
+				distanceRounded = Math.round(DISTANCE * 100) / 100.0;
 				System.out.println("Distance between points (" + POINTSXY[i][0] + ", " + POINTSXY[i][1] + ") and ("
-						+ POINTSXY[j][0] + ", " + POINTSXY[j][1] + ") is: " + d_rounded);
+						+ POINTSXY[j][0] + ", " + POINTSXY[j][1] + ") is: " + distanceRounded);
 				if (DISTANCE < CLOSEST) {
 					p1x = i;
 					p2x = j;
