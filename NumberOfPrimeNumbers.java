@@ -3,11 +3,11 @@ public class NumberOfPrimeNumbers {
 
 	public static void main(String[] args) {
 		int count = 0;
-		for (int number = 2; number < 10000; number++)
+		for (int number = 2; number < 10000; number++) {
 			if (isPrime(number)) {
 				count = count + 1;
 			}
-
+		}
 		System.out.println("The number of prime numbers < 10000 is " + count);
 	}
 
