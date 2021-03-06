@@ -4,7 +4,7 @@ public class Rectangle {
 	private double height = 1;
 
 	// no-arg constructor
-	public Rectangle() {
+	public Rectangle() {	
 	}
 
 	// second constructor
@@ -35,12 +35,12 @@ public class Rectangle {
 
 	// return the area of a rectangle
 	public double getArea() {
-		return this.width * this.height;
+		return width * height;
 	}
 
 	// return the perimeter of a rectangle
 	public double getPerimeter() {
-		return 2 * (this.width + this.height);
+		return 2 * (width + height);
 	}
 
 }
