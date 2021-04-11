@@ -48,7 +48,6 @@ public class Fan {
 
 	@Override
 	public String toString() {
-		 //return "speed = " + speed + ", color = " + color+ ", radius = " + radius + (isOn() ? ", fan is on" : ", fan is off");
 		if (isOn()) {
 			return "speed = " + speed  + ", color = " + color + ", radius = " + radius;
 		} else {
