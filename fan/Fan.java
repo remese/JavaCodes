@@ -52,7 +52,7 @@ public class Fan {
 		if (isOn()) {
 			return "speed = " + speed  + ", color = " + color + ", radius = " + radius;
 		} else {
-			return "speed = " + speed + ", color = " + color + ", radius = " + radius  + ", fan is off";
+			return "color = " + color + ", radius = " + radius  + ", fan is off";
 		}
 	}
 
