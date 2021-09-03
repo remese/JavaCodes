@@ -43,7 +43,7 @@ public class MyLinkedList {
 		}
 	}
 
-	public void addInOrder(int n) {
+	public void addInOrder(int e) {
 
 	}
 
