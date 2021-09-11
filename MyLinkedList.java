@@ -44,7 +44,26 @@ public class MyLinkedList {
 	}
 
 	public void addInOrder(int e) {
-
+		Node newNode = new Node(e);
+		if (head == null) {
+			addFirst(e); // Insert first
+		} else if (head.element > e) {
+			newNode.next = head;
+			head = newNode;
+			size++;
+		} else {
+			Node current = head;
+			while (current.next != null && e > current.next.element) {
+				current = current.next;
+			}
+			if (current.next != null) {
+				newNode.next = current.next;
+				current.next = newNode;
+				size++;
+			} else {
+				addLast(e);
+			}
+		}
 	}
 
 	public Object removeFirst() {
@@ -110,14 +129,28 @@ public class MyLinkedList {
 		System.out.println();
 	}
 
+	public int sumElements() {
+		int sum = 0;
+		Node current = head;
+		while (current != null) {
+			sum = sum + current.element;
+			current = current.next;
+		}
+		return sum;
+	}
+
 
 	public static void main(String[] args) {
 		MyLinkedList list1 = new MyLinkedList();
+		l1.addInOrder(1);
+		l1.addInOrder(9);
+		l1.addInOrder(8);
+		l1.addInOrder(6);
+		l1.list();
 
 	}
 
 	private class Node {
-
 		int element;
 		Node next;
 
