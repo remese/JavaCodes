@@ -40,7 +40,7 @@ public class Stack {
 		Stack stack = new Stack();
 		stack.push(3);
 		stack.push(4);
-		System.out.println(list.toString());
+		System.out.println(stack.toString());
 
 	}
 
