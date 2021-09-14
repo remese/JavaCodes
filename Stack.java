@@ -27,6 +27,10 @@ public class Stack {
 		list.add(o);
 	}
 
+	// The toString() method defined in the Object class is overridden to display
+	// the contents of the stack by invoking list.toString().		
+	// The toString() method implemented in ArrayList returns a string
+	// representation of all the elements in an array list.
 	@Override
 	public String toString() {
 		return "Stack:" + list.toString();
@@ -36,10 +40,6 @@ public class Stack {
 		Stack list = new Stack();
 		list.push(3);
 		list.push(4);
-		// The toString() method defined in the Object class is overridden to display
-		// the contents of the stack by invoking list.toString().
-		// The toString() method implemented in ArrayList returns a string
-		// representation of all the elements in an array list.
 		System.out.println(list.toString());
 
 	}
