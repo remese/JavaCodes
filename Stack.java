@@ -37,9 +37,9 @@ public class Stack {
 	}
 
 	public static void main(String[] args) {
-		Stack list = new Stack();
-		list.push(3);
-		list.push(4);
+		Stack stack = new Stack();
+		stack.push(3);
+		stack.push(4);
 		System.out.println(list.toString());
 
 	}
